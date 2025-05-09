@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingHorizontal="50dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Basic Calculator"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginVertical="20dp"
+        />
+
+    <EditText
+        android:id="@+id/etValorA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el valor A"
+        android:paddingVertical="14dp"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        />
+    <EditText
+        android:id="@+id/etValorB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el valor B"
+        android:paddingVertical="14dp"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        />
+    <EditText
+        android:id="@+id/etValorC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el valor C"
+        android:paddingVertical="14dp"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnSumar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUMAR"
+            />
+        <Button
+            android:id="@+id/btnRestar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESTAR"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnMultiplicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MULTIPLICAR"
+            />
+        <Button
+            android:id="@+id/btnDividir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIVIDIR"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado:&#xa;A + B + C = res"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginVertical="20dp"
+        />
+
+
+</LinearLayout>
